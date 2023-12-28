@@ -7,10 +7,10 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-     - ./notebooks:/notebooks
-     - ./jupyter_data:/home/jovyan
+     - /home/cgast/Data/jupyter/notebooks:/notebooks
+     - /home/cgast/Data/jupyter/jupyter_data:/home/jovyan
     ports:
-      - "8888:8888"
+      - "8020:8888"
     # entrypoint: service cron start
     user: root
     environment:
