@@ -1,5 +1,5 @@
 # Start from a core stack version
-FROM jupyter/base-notebook:latest
+FROM quay.io/jupyter/datascience-notebook:2023-11-17
 
 
 # Switch to root user to install cron
