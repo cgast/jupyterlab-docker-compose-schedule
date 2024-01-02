@@ -19,7 +19,6 @@ ENV USER=$NB_USER
 COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 RUN pip install --no-cache-dir --requirement /tmp/requirements.txt
 
-
 RUN jupyter labextension install jupyterlab_scheduler --no-build && \
     jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
 
